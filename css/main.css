@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+section {
+  margin: 90px 0;
+}
+
 .main-nav,
 .main-nav__item,
 .main-header > div {
@@ -156,4 +160,31 @@ body {
   cursor: pointer;
   background-color: #fff;
   color: #0e4f1f;
+}
+
+#core-feature {
+  background-color: #ff1b68;
+  padding: 80px;
+  color: #fff;
+}
+
+#core-feature .section-title {
+  color: #fff;
+}
+
+.core-feature__feature {
+  display: inline-block;
+  width: 30%;
+}
+
+.core-feature__feature > div {
+  height: 120px;
+  width: 120px;
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.core-feature__feature > p {
+  font-weight: bold;
 }
