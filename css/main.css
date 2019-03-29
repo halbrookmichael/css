@@ -8,10 +8,6 @@ body {
   padding: 0;
 }
 
-section {
-  margin: 90px 0;
-}
-
 .button {
   background-color: #0e4f1f;
   color: #fff;
@@ -27,6 +23,11 @@ section {
   cursor: pointer;
   background-color: #fff;
   color: #0e4f1f;
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
 }
 
 .main-nav,
@@ -97,19 +98,18 @@ section {
 
 #product-overview {
   background-image: url('../img/freedom.jpg');
-  background-position: 0 0;
   height: 528px;
   padding: 10px;
-}
-
-.section-title {
-  color: #2ddf5c;
-  text-align: center;
+  margin-bottom: 48px;
 }
 
 #product-overview h1 {
   color: white;
   font-family: 'Anton', sans-serif;
+}
+
+#plans {
+  margin-bottom: 48px;
 }
 
 .plan {
@@ -166,6 +166,7 @@ section {
   background-color: #ff1b68;
   color: #fff;
   padding: 20px;
+  margin-bottom: 48px;
 }
 
 #core-features .section-title {
@@ -199,4 +200,31 @@ section {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+}
+
+.main-footer {
+  background-color: #000;
+  padding: 30px;
+}
+
+.main-footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-footer__link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
 }
