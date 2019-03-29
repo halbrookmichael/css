@@ -12,6 +12,23 @@ section {
   margin: 90px 0;
 }
 
+.button {
+  background-color: #0e4f1f;
+  color: #fff;
+  padding: 10px 16px;
+  border: .5px solid #0e4f1f;
+  border-radius: 3px;
+  font: inherit;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  cursor: pointer;
+  background-color: #fff;
+  color: #0e4f1f;
+}
+
 .main-nav,
 .main-nav__item,
 .main-header > div {
@@ -105,13 +122,13 @@ section {
   vertical-align: middle;
 }
 
-.plan > ul {
+.plan__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.plan > ul li {
+.plan__list li {
   margin: 8px 0;
 }
 
@@ -145,46 +162,41 @@ section {
   color: #858585;
 }
 
-.button {
-  background-color: #0e4f1f;
-  color: #fff;
-  padding: 10px 16px;
-  border: .5px solid #0e4f1f;
-  border-radius: 3px;
-  font: inherit;
-  font-weight: bold;
-}
-
-.button:hover,
-.button:active {
-  cursor: pointer;
-  background-color: #fff;
-  color: #0e4f1f;
-}
-
-#core-feature {
+#core-features {
   background-color: #ff1b68;
-  padding: 80px;
   color: #fff;
+  padding: 20px;
 }
 
-#core-feature .section-title {
+#core-features .section-title {
   color: #fff;
+  margin: 32px;
 }
 
-.core-feature__feature {
+.core-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.core-feature {
   display: inline-block;
-  width: 30%;
+  width: 30%; /* width at 30% because inline-block contains white space that also has a width and can cause line breaks */
+  vertical-align: top;
 }
 
-.core-feature__feature > div {
+.core-feature__image {
   height: 120px;
   width: 120px;
   background-color: rgba(255, 255, 255, .9);
   border: 2px solid #000;
   border-radius: 50%;
+  margin: 0 auto;
 }
 
-.core-feature__feature > p {
+.core-feature__description {
+  text-align: center;
   font-weight: bold;
+  font-size: 20px;
 }
