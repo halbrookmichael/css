@@ -1,15 +1,21 @@
 #package {
-  margin: 48px 0;
+  margin-top: 90px;
+  margin-bottom: 45px;
 }
 
-.clearfix {
-  clear: both;
+.background {
+  background-image: url('../img/plans-background.jpg');
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .package {
   /* border: 4px solid #1e275c; */
   border-left: none;
-  margin-bottom: 16px;
+  margin: 16px 0;
   /* padding: 32px; */
   width: 80%;
 }

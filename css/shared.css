@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .button {
   background-color: #fccd22;
   color: #fff;
@@ -40,6 +44,9 @@ body {
   background-color: #4d5fc8;
   width: 100%;
   padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px 1.25px rgba(0, 0, 0, .3);
 }
 
 .main-header > div {
