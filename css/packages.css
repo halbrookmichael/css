@@ -4,7 +4,8 @@
 }
 
 .background {
-  background-image: url('../img/plans-background.jpg');
+  background: url('../img/plans-background.jpg') center/cover;
+  filter: grayscale(55%);
   position: fixed;
   top: 0;
   height: 100%;
@@ -27,7 +28,7 @@
 }
 
 .package:nth-of-type(2) {
-  background-color: rgba(77, 95, 200, .9);
+  background-color: rgba(77, 95, 200, .95);
   float: right; /* many problems */
   /* border-left: 5px solid #1e275c; */
   /* border-right: none; */
