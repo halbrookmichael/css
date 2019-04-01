@@ -19,6 +19,7 @@
   /* padding: 32px; */
   width: 80%;
   position: relative;
+  z-index: -1;
 }
 
 .package:nth-of-type(1) {
@@ -43,6 +44,7 @@
   font-size: 12px;
   border-radius: 3px;
   padding: 8px 12px;
+  z-index: 10;
 }
 
 .package--highlighted {
