@@ -18,6 +18,7 @@
   margin: 16px 0;
   /* padding: 32px; */
   width: 80%;
+  position: relative;
 }
 
 .package:nth-of-type(1) {
@@ -30,6 +31,18 @@
   /* border-left: 5px solid #1e275c; */
   /* border-right: none; */
   text-align: right;
+}
+
+.package__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
+  color: #fff;
+  background-color: #fccd22;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 8px 12px;
 }
 
 .package--highlighted {
