@@ -8,17 +8,6 @@ body {
   padding: 0;
 }
 
-.backdrop {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, .5);
-  z-index: 100;
-  display: none;
-}
-
 .clearfix {
   clear: both;
 }
@@ -31,11 +20,11 @@ body {
   border-radius: 3px;
   font: inherit;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:active {
-  cursor: pointer;
   background-color: #fff;
   color: #4d5fc8;
 }
@@ -147,4 +136,66 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
   color: #ccc;
+}
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background-color: #4d5fc8;
+  padding: 1rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.502);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 0 1rem 0;
+  color: #fff;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  background-color: #fccd22;
+  text-decoration: none;
+  color: #fff;
+  padding: .625rem 1rem;
+  border: .5px solid #fccd22;
+  border-radius: 3px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background-color: #fff;
+  color: #4d5fc8;
+}
+
+.modal__action--negative {
+  background-color: #b41515;
+  border-color: #b41515;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background-color: #fff;
+  color: #b41515;
 }
