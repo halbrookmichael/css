@@ -1,7 +1,9 @@
 const backdrop = document.querySelector('.backdrop'),
       modal = document.querySelector('.modal'),
       plansBtn = document.querySelectorAll('.plan button'),
-      closeBtn = document.querySelector('.modal__action--negative');
+      closeBtn = document.querySelector('.modal__action--negative'),
+      toggle = document.querySelector('.toggle-button'),
+      mobileNav = document.querySelector('.mobile-nav');
       
 let i;
 
@@ -11,15 +13,22 @@ for(i = 0;i < plansBtn.length;i ++) {
 }
 backdrop.addEventListener('click', close);
 closeBtn.addEventListener('click', close);
+toggle.addEventListener('click', openMobileNav);
 
 // open modal
 function openModal() {
-  backdrop.style.display = 'block';
-  modal.style.display = 'block';
+  backdrop.classList.add('show');
+  modal.classList.add('show');
 }
 
 // close modal
 function close() {
-  backdrop.style.display = 'none';
-  modal.style.display = 'none';
+  backdrop.classList.remove('show');
+  modal.classList.remove('show');
+  mobileNav.classList.remove('show');;
+}
+
+function openMobileNav() {
+  mobileNav.classList.add('show');
+  backdrop.classList.add('show');
 }
