@@ -16,14 +16,3 @@ function openNav() {
   mobileNav.classList.add('show');
   backdrop.classList.add('show');
 }
-
-
-
-// window.addEventListener('scroll', () => {
-//   let scrolled = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-//   console.log(scrolled)
-
-//   if(scrolled == 0) {
-//     alert('here')
-//   }
-// })
